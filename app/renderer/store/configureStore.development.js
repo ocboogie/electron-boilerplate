@@ -1,4 +1,3 @@
-// @flow
 import { createStore, applyMiddleware, compose } from 'redux';
 import { hashHistory } from 'react-router';
 import { routerMiddleware, push } from 'react-router-redux';

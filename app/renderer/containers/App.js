@@ -33,7 +33,7 @@ class App extends React.Component {
 
 function mapDispatchToProps(dispatch) {
     return {
-        push: (path: string) => {
+        push: (path) => {
             dispatch(push(path));
         }
     }

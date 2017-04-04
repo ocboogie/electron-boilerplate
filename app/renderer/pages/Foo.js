@@ -2,15 +2,11 @@ import * as React from 'react';
 import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
 
-class Main extends React.Component {
+export default class Foo extends React.Component {
 
     constructor(props) {
         super(props);
         this.handleClick = this.handleClick.bind(this);
-    }
-
-    handleClick() {
-        this.props.push("/");
     }
 
     render() {
@@ -20,14 +16,3 @@ class Main extends React.Component {
         )
     }
 }
-
-
-function mapDispatchToProps(dispatch) {
-    return {
-        push: (path: string) => {
-            dispatch(push(path));
-        }
-    }
-}
-
-export default connect(null, mapDispatchToProps)(Main);

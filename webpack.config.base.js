@@ -1,6 +1,9 @@
 const path = require('path');
 
 module.exports = {
+    output: {
+        path: path.resolve(__dirname, "dist")
+    },
     module: {
         rules: [
             {
@@ -12,15 +15,11 @@ module.exports = {
                         "presets": [
                             "latest",
                             "react"
-                        ],
-                        "plugins": ["flow-runtime"]
+                        ]
                     }
                 }
             }
         ]
-    },
-    output: {
-        path: path.resolve(__dirname, "dist")
     },
     resolve: {
         extensions: [".js", ".jsx", ".json"]

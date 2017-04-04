@@ -1,4 +1,3 @@
-// @flow
 import 'bootstrap-sass';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
@@ -14,6 +13,11 @@ import configureStore from './store';
 
 const store = configureStore({});
 const history = syncHistoryWithStore(hashHistory, store);
+
+function test(arg: string) {
+
+}
+test(1);
 
 ReactDOM.render(
     (

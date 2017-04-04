@@ -1,4 +1,3 @@
-// @flow
 import { remote } from 'electron';
 
 import dev from './configureStore.development';
