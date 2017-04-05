@@ -1,3 +1,4 @@
+// @flow
 import dev from './configureStore.development';
 import prod from './configureStore.production';
 

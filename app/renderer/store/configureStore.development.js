@@ -1,3 +1,4 @@
+// @flow
 import { applyMiddleware, compose, createStore } from 'redux';
 import { hashHistory } from 'react-router';
 import { routerMiddleware } from 'react-router-redux';
@@ -12,7 +13,7 @@ const logger = createLogger({
 const router = routerMiddleware(hashHistory);
 const middleware = applyMiddleware(router, logger);
 
-export default function configureStore(initialState) {
+export default function configureStore(initialState: any = {}) {
   if (window.__REDUX_DEVTOOLS_EXTENSION__) { // eslint-disable-line
     return createStore(
             rootReducer,

@@ -1,3 +1,4 @@
+// @flow
 import * as React from 'react';
 import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
@@ -10,8 +11,8 @@ class App extends React.Component {
 
   constructor(props) {
     super(props);
-    this.clickHome = this.clickHome.bind(this);
-    this.clickFoo = this.clickFoo.bind(this);
+    this.clickHome = this.clickHome.bind(this); // eslint-disable-line flowtype-errors
+    this.clickFoo = this.clickFoo.bind(this); // eslint-disable-line flowtype-errors
   }
 
   props: {
@@ -45,4 +46,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(null, mapDispatchToProps)(App); // eslint-disable-line
