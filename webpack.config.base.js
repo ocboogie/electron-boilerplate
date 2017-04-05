@@ -9,15 +9,18 @@ module.exports = {
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader",
-                    options: {
-                        "presets": [
-                            "latest",
-                            "react"
-                        ]
-                    }
-                }
+                use: [
+                    {
+                        loader: "babel-loader",
+                        options: {
+                            "presets": [
+                                "latest",
+                                "react"
+                            ]
+                        }
+                    },
+                    "eslint-loader"
+                ]
             }
         ]
     },

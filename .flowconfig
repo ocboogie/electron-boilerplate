@@ -1,0 +1,14 @@
+[ignore]
+.*/node_modules/fbjs/.*
+.*/app/main.js
+.*/app/dist/.*
+.*/release/.*
+.*/git/.*
+
+[include]
+
+[libs]
+
+[options]
+module.name_mapper.extension='scss' -> '<PROJECT_ROOT>/flow/sassModule.js.flow'
+module.name_mapper.extension='sass' -> '<PROJECT_ROOT>/flow/sassModule.js.flow'
