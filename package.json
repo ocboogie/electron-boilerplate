@@ -31,7 +31,7 @@
     "flow-bin": "^0.42.0",
     "flow-typed": "^2.0.0",
     "html-webpack-plugin": "^2.28.0",
-    "node-sass": "^4.5.1",
+    "node-sass": "^7.0.0",
     "parallel-webpack": "^1.6.1",
     "redux-logger": "^3.0.1",
     "sass-loader": "^6.0.3",
